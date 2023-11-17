@@ -17,9 +17,32 @@ const WeatherApp = ()=> {
          <div className="top-bar">
           <input type="text" className="cityInput" placeholder='Search'/>
           <div className="search-icon">
-           <img src={search_icon} alt=""/>
+           <img src={search_icon} alt="search icon"/>
           </div>
           </div>
+          <div className="weather-image">
+            <img src={cloud_icon}    alt="icon of cloud"/>
+          </div>
+          <div className="weather-temp">70°</div>
+          <div className="weather-location">Milwaukee</div>
+          <div className="data-container">
+             <div className="element">
+                <img src={humidity_icon}    alt="humidity icon" className="icon"/>
+                <div className="data">
+                    <div className="humidity-percent">64%</div>
+                    <div className="text">humidity</div>
+                </div>
+             </div>
+              <div className="element">
+                <img src={wind_icon}    alt="" className="icon"/>
+                <div className="data">
+                    <div className="humidity-percent">18 km/h</div>
+                    <div className="text">Wind Speed</div>
+                </div>
+             </div>
+          </div>
+
+
         </div>
     )
 }
